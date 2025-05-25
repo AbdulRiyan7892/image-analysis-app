@@ -29,7 +29,6 @@ except Exception as e:
 def home():
     return "Server running!"
 
-
 @app.route('/analyze', methods=['POST'])
 def analyze():
     print("Received request at /analyze")
@@ -49,6 +48,3 @@ def analyze():
         collection.insert_one(result)
 
     return jsonify(result), 200
-
-if __name__ == '__main__':
-    app.run(debug=True)
