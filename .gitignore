@@ -1,0 +1,12 @@
+# Ignore Python
+__pycache__/
+*.pyc
+.env
+uploads/
+
+# Ignore Node modules
+node_modules/
+build/
+
+# Ignore system files
+.DS_Store
