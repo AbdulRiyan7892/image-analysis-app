@@ -18,7 +18,7 @@ function UploadPage() {
 
     try {
       const response = await axios.post(
-        'https://sp-3.onrender.com/analyze', // Replace with your Render backend URL
+        'https://image-analysis-app.onrender.com/analyze', // Replace with your Render backend URL
         formData,
         {
           headers: {
