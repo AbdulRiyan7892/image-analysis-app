@@ -29,8 +29,10 @@ except Exception as e:
 def home():
     return "Server running!"
 
+
 @app.route('/analyze', methods=['POST'])
 def analyze():
+    print("Received request at /analyze")
     if 'image' not in request.files:
         return jsonify({'error': 'No file uploaded'}), 400
 
